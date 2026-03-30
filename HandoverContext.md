@@ -20,6 +20,10 @@
 3. **第一性原理与类比 (First Principles & Analogy)**：
    - 讲新概念先讲**物理本质**。
    - 适度使用**通俗类比**（如 SQL `SELECT` 查数据就是“菜单点菜”，Repo 层就是“库管员”），但忌全篇比喻，维持专业感。
+4. **教案输出模板 (Crucial)**：每次开启新模块教学时，生成独立的 `artifact` 文档，并**必须严格嵌套以下三段式结构**（参考 Module 3的风格。文件路径"C:\Users\Jeffery\.gemini\antigravity\brain\bdcc0dbb-747a-425a-b1a7-8f8886b58c1d\lesson_3_sqlx_database.md.resolved"）：
+   - `## 🧭 第一性原理拆解`：讲透为什么有它、它的物理本质、以及架构位置。
+   - `## 🦴 核心知识点与代码骨架`：只给出最精简的框架体及关键法则。
+   - `## 🎯 你的费曼挑战`：分步骤下达任务指令，要求在独立的 `demo_*.go` 中跑通闭环。
 
 ---
 

@@ -12,12 +12,12 @@ func NewRepoManager(db *sqlx.DB) *RepoManager {
 	return &RepoManager{db: db}
 }
 
-func (RM *RepoManager) Create(path string, content string) error {
+func (RM *RepoManager) AddPhoto(path string, content string) error {
 	_, err := RM.db.Exec("INSERT INTO Photos (PATH,CONTENT) VALUES(?,?)", path, content)
 	return err
 }
 
-func (RM *RepoManager) ReadByID(id int) (Photo, error) {
+func (RM *RepoManager) GetByID(id int) (Photo, error) {
 	var photo Photo
 	err := RM.db.Get(&photo, "SELECT * FROM Photos WHERE ID =?", id)
 	return photo, err
